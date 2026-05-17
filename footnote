@@ -1,0 +1,13 @@
+架構：
+Thunder 負責追蹤圈內容  
+Phoenix 負責全站內容召回與排序  
+Home Mixer 負責整體 pipeline orchestration
+比較有意思的是，它幾乎把傳統那些手工調教規則拿掉，直接讓 Grok-based transformer 去判斷你會不會互動。
+也就是說，你看到什麼內容，不再只是「如果按讚就加分」這種規則，而是模型直接預測：
+你會不會留言？
+會不會轉發？
+會不會點進去？
+會不會停下來看？
+甚至會不會封鎖對方？
+對做 AI Agent、推薦系統、Ranking Pipeline、Rust 後端架構的人來說，這份 repo 很值得研究。
+看 production code，永遠比看教科書快。
